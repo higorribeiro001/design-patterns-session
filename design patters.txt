@@ -1,0 +1,39 @@
+- São divididos em 3 categorias:
+
+creational,
+structural,
+behavioural (comportamental)
+
+- De criação:
+
+Abstract factory
+Factory Method
+Builder
+Prototype
+Singleton
+
+- Estrutural:
+
+Adapter
+Bridge
+Composite
+Decorator
+Facade
+Flyweight
+Proxy
+
+- Comportamental:
+
+Interpreter
+Template Method
+Chain of responsibility
+Iterator
+Command
+Mediator
+Memento
+Observer
+State
+Strategy
+Visitor
+
+doc: https://github.com/luizomf/design-patterns-typescript
