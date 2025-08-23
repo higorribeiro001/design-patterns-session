@@ -31,6 +31,7 @@
               "eslintIntegration": true,
               "printWidth": 80
             }
-          ]
+          ],
+          "@typescript-eslint/no-empty-function": "off"
     }
 }

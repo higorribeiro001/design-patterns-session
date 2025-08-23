@@ -1,0 +1,18 @@
+Singleton - Garantir que uma classe tenha somente uma instância e fornecer um ponto global de acesso para ela.
+
+-> Somente uma instância?
+
+- Geralmente usada para acesso a recursos compartilhados, como acesso à base de dados, interfaces gráficas, sistem de arquivos, servidores de impressão e mais.
+- Também usado para substituir varáveis globais, como em casos de uso de objetos de configuração do sistema como um todo.
+
+-> Ponto de acesso global?
+
+- Você pode permitir acesso global ao Singleton em toda sua aplicação, assim como fazíamos (ou fazemos) com varáveis globais.
+- Uma vantagem é que podemos proteger a instância com enapsulamento, evitando que outro código sobrescreva seu valor.
+
+-> Aplicabilidade:
+
+- Use o singleton quando uma classe precisa ter somente uma instância disponível em todo o seu programa.
+- Use o singleton quando perceber que está usando variáveis globais
+
+-> Ele Viola o princípio da responsabilidade única

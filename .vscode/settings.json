@@ -1,5 +1,5 @@
 {
     "code-runner.executorMap": {
-        "typescript": "cls && npx ts-node --files" // no linux fica clear
+        "typescript": "cls && npx ts-node" // no linux fica clear
     }
 }
