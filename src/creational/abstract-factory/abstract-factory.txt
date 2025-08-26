@@ -1,0 +1,21 @@
+-> Intenção oficial:
+
+- Fornecer uma interface para criação de familias de objetos relacionados ou dependentes sem especificar suas classes concretas.
+
+-> Sobre o Abstract Factory:
+
+- É um padrão de criação, portanto lida com a criação de objetos
+- É uma fábrica, assim como o Factory Method e geralmente é composto por múltiplos Factory Methods
+- Visa agrupar famílias de produtos compatíveis criando uma fábrica concreta por grupo de objetos compatíveis
+- Separa o código que cria do código que usa os objetos (SRP)
+- Permite fácil implementação de novas famílias de objetos (OCP)
+
+-> Aplicabilidade:
+
+- Use o Abstract Factory quando:
+
+- um sistema deve ser independente de como seus produtos são criados, compostos ou representados
+- um sistema deve ser configurado com uma fmília produtos que podem (ou não) trabalhar juntos
+- uma família de objetos for projetada para ser usada em conjunto e você necessita garantir essa restrição
+- você quer fornecer uma biblioteca de classes de produtos e quer revelar somente suas interfaces, não suas implementações
+
