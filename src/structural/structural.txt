@@ -18,3 +18,6 @@ Façade - fornece uma interface unifica para um conjunto de interfaces em um sub
 Flyweight - usa compartilhamento para suportar grandes quantidades de objetos de granularidade fina, de maneira eficiente.
 
 Proxy - fornece um objeto representante (surrogate), ou um marcador de outro objeto para controlar o acesso ao mesmo.
+
+-> Se preocupam com a forma como os objetos são compostos para formar estruturas maiores.
+

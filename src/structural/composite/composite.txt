@@ -1,0 +1,19 @@
+-> Intenção oficial
+
+- compor objetos em estruturas de árvore para representar hierarquias partes/todo. Composite permite aos clientes tratarem de maneira uniforme objetos individuais e composições de objetos.
+
+-> Sobre:
+
+- É um padrão de categoria estrutural (structural)
+- Faz mais sentido em estruturas que podem ser tratadas hierarquicamente (como árvores).
+- Pode ser uma solução para estruturas complexas que podem ser tratadas de maneiras uniforme.
+- Prioriza composição ao invés de herança
+- Ex: produto solto com preço e caixa com vários do mesmo produto também com preço
+
+-> Objetos que tem filhos com os composite
+-> Objetos leaf são aqueles que não tem filho(s), são objetos da ponta
+
+-> Aplicabilidade:
+
+- sua estrutura de objetos possa ser representada hierarquicamente, como por exemplo, estruturas do tipo árvore
+- você quiser que o cliente trate objetos compostos e objetos simples da mesma maneira
