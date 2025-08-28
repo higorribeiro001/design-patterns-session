@@ -1,0 +1,26 @@
+-> intenção oficial:
+
+Bridge é um padrão de projeto estrutural que tem a intenção de desacoplar uma abstração da sua implementação, de modo que as duas possam variar e evoluir independentemente.
+
+- Abstração: é um código de alto nível que geralmente delega ações para outro projeto
+
+- Implementação: é o código que realmente faz o trabalho
+
+-> Diferenças entre Bridge e Adapter:
+
+- (GOF pág. 208) A diferença chave entre esses padrões está nas suas intenções... O padrão Adapter faz as coisas funcionarem APÓS elas terem sido projetadas; o Bridge as faz funcionar ANTES QUE existam...
+
+-> Aplicabilidade:
+
+Use o padrão Bridge quando:
+
+- Você souber que sua estrutura terá abstrações (código de alto nível) e implementações dessa abstração (detalhes) que possam variar de maneira independente
+- você souber que o Adapter poderia ser aplicado naquela estrutura (você já conhece a estrutura)
+- você quiser dividir uma classe que possa ter diversas varientes (como em produtos e suas variações de cores: CanetaAzul, CanetaVermelha, CamisetaAzul, CamisetaVermelha, etc...)
+- você quer trocar as implementações em tempo de execução
+
+-> Bom:
+
+- Desacopla o código da abstração do código da implementação (SRP)
+- Implementa o OCP ao permitir novas abstrações e/ou implementações para o código existente
+- Tem as mesmas vantagens do Adapter
