@@ -26,3 +26,6 @@ Strategy - Define uma família de algoritmos, encapsular cada um deles e fazê-l
 Template method - define o esqueleto de um algoritmo em uma operação, postergando a definição de alguns passos para subclasses. O template method permite que as subclasses redefinam certos passos de um algoritmo sem mudar sua estrutura.
 
 Visitor - representa uma operação a ser executada sobre os elementos da estrutura de um objeto. O visitor permite que você defina uma nova operação sem mudar as classes dos elementos sobre os quais opera.
+
+
+-> Os padrões de projeto comportamentais se preocupam com algoritmos, a atribuição de responsabilidades entre projetos e os padrões de comunicação entre eles.
