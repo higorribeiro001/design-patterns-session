@@ -1,0 +1,26 @@
+-> Intenção oficial:
+
+- Flyweight é um padrão de projeto estrutural que tem a intenção de usar compartilhamento para suportar eficientemente grandes quantidades de objetos de forma granular
+
+-> Sobre:
+
+- É um padrão de otimização (cuidado)
+- Visa economizar memória RAM devido ao grande número de objetos na aplicação
+- Resolve o problema de desempenho dividindo o estado de um objeto em "intrínseco" e "extrínseco":
+    - Estado intrínseco é o estado que geralmente não muda ou que muda muito pouco
+    - Estado extrínseco é o estado que pode ser movido para fora do objeto por mudar frequentemente
+- Só deve ser usado se sua aplicação estiver com problemas de alto consumo de memória RAM
+
+-> Aplicabilidade:
+
+Só use o Flyweight se TODAS as condições a seguir forem verdadeiras:
+
+- sua aplicação utiliza grande quantidade de objetos;
+- os custos de armazenamento são altos por causa da grande quantidade de objetos;
+- a maioria dos estados de objetos podem se tornar extrínsecos;
+muitos objetos podem ser substituídos por poucos objetos compartilhados;
+- a aplicação não depende da identidade dos objetos.
+
+-> Bom:
+
+- Pode economizar memória RAM
