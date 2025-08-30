@@ -1,0 +1,28 @@
+-> Intenção oficial:
+
+Sem violar o encapsulamento, captura e externaliza um estado interno de um objeto, de modo que o mesmo possa posteriormente ser restaurado para este estado.
+
+- Trabalha junto com o command
+
+-> Sobre:
+
+- praticamente todas as aplicações o implementam com a função desfazer (CTRL + Z)
+- desacopla a responsabilidade da classe originadora de tomar conta dos seus backups
+- garante o encapsulamento e consistência nos backups
+
+-> Aplicabilidade:
+
+- você quer ter a responsabilidade de salva e restaurar o estado atual de um objeto sem violar o encapsulamento
+- você deseja implementar a função "desfazer" no seu sistema
+- você deseja fazer backups de estado de determinadas classes no seu sistema
+
+-> Bom:
+
+- desacopla a responsabilidade de tomar conta do backup da classe original
+- é fácil salvar e restaurar backup de uma classe
+
+-> Ruim:
+
+- quanto mais backups, maior o consumo de memória da sua aplicação
+- as classes zeladoras precisam acompanhar as mudanças nas classes originadoras
+- pode ser desafiador garantir o encapsulamento em algumas linguagens de programação
