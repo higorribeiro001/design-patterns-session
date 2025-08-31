@@ -1,0 +1,33 @@
+-> Intenção oficial:
+
+Evita o acoplamento do remetente de uma solicitação ao seu destinatário, dando a mais de um objeto a chance de tratar a solicitação. Encadeia os objetos receptores e passa a solicitação ao longo da cadeia até que um objeto a trate
+
+-> Sobre:
+
+- é usado quando uma requisição precisa passar por uma sequência de operações até ser totalmente tratada
+- desacopla quem envia de quem vai tratar a requisição
+- é muito usado com requisições HTTP
+- é a base para outros padrões de projeto conhecidos (como Middleware usado no express)
+- permite que um objeto TRATE a requisição e chame o PRÓXIMO objeto da cadeia
+- permite que um objeto NÃO TRATE a requisição e chame o PRÓXIMO objeto da cadeira
+- permite que um objeto TRATE a requisição e FINALIZE a cadeia
+- premite que um objeto NÃO TRATE a requisição e FINALIZE a cadeia
+- o cliente pode iniciar a requisição de qualquer objeto caso necessário
+
+-> Aplicabilidade:
+
+- seu sistema precisa processar uma requisição em várias etapas diferentes e você não quer criar uma ordem rígida para o processamento. O chain of responsability permite que você altere a ordem dos objetos na cadeia facilmente (mesmo assim, mantendo uma ordem específica)
+- você quer aplciar o princípio da responsabilidade única para tratamento de dados da requisição. Cada objeto fica responsável por tratar apenas a parte que lhe couber
+- você quer permitir que os objetos responsáveis pelo tratamento da requisição possam variar em tempo de execução
+
+-> Consequências:
+
+Bom:
+
+- Aplica o princípio da responsabilidade única (SRP)
+- Aplica o princípio do aberto e fechado (OCP)
+- Permite que você altere a cadeia de objetos e a ordem das chamadas facilmente
+
+Ruim:
+
+- é comum uma requisição passar por toda a cadeia e não ser tratada
