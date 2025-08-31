@@ -1,0 +1,25 @@
+-> Intenção oficial:
+
+Define um objeto que encapsula como um conjunto de objetos interage. O mediator promove o acoplamento fraco ao evitar que os objetos se refiram explicitamente uns aos outros, permitindo que você varie suas interações
+
+-> Sobre:
+
+- visa encapsular a comunicação direta entre objetos
+- desacopla objetos que estariam intimamente ligados
+- centraliza toda a comunicação em apenas um objeto
+
+-> Aplicabilidade:
+
+- você quer diminuir ou extinguir o acoplamento direto entre as classes que poderiam estar totalmente acopladas
+- você quer simplificar comunicações de de muitos-para-muitos para comunicações um-para-muitos.
+
+-> Consequências:
+
+Bom:
+
+- desacopla objetos que poderiam estar firmemente acoploados
+- facilita a reutilização de objetos
+- facilita a adição de novos mediadores e classes participantes na comunicação
+- encapsula a comunicação entre objetos
+
+Ruim: é fácil criar um mediator "faz tudo" (god class)
