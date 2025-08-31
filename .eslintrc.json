@@ -33,5 +33,6 @@
             }
           ],
           "@typescript-eslint/no-empty-function": "off"
-    }
+    },
+    "ignorePatterns": ["*.html"]
 }
