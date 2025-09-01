@@ -1,0 +1,34 @@
+doc: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols
+
+-> Intenção oficial:
+
+Fornece uma maneira de acessar sequencialmente os elementos de um objeto agregado se export sua representação subjacente.
+
+-> Sobre:
+
+- desacopla a intenção principal do objeto do modo como a sua iteração é realizada (delega a iteração para outro objeto)
+- permite vários tipos de iterators, facilitando a implementação de novos modos de travessia na mesma coleção
+- encapsula os detalhes e monitora toda a travessia
+- permite que a coleção troque de iterador em tempo de execução
+- geralmente a linguagem de programação disponibiliza maneiras para trabalhar com iterators
+
+-> Aplicabilidade:
+
+Use o iterator quando:
+
+- você precisa mover a complexidade de travessia de dentro da coleção principal. Isso permite que sua coleção foque apenas em armazenar dados de maneira eficiente
+- sua coleção pode ter vários modos de travessia, como crescente, decrescente, pelo menor número de saltos, pulando de dois em dois, ou como preferir
+- você quer disponibilizar protocolos de travessia diferentes tipos coleções
+
+-> Consequências:
+
+Bom:
+
+- é possível pausar a travessia e continuar posteriormente
+- é possível atravessar várias vezes a mesma coleção em paralelo usando outro objeto iterador
+- é fácil adicionar novos objetos iteradores com algoritmos de travessia completamente diferentes
+- não polui o código do objeto principal com vários métodos e algoritmos de travessia diferentes
+
+Ruim:
+
+- este padrão só é útil se sua coleção realmente precisar de uma travessia complexa. Do contrário é apenas complexidade a mais.
